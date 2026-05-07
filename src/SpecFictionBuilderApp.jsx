@@ -1395,7 +1395,10 @@ export default function SpecFictionBuilderApp() {
             ))}
           </div>
 
-          <div ref={tuteScrollRef} className="min-h-0 flex-1 overflow-y-auto p-5">
+          <div
+            ref={tuteScrollRef}
+            className="min-h-0 flex-1 overflow-y-auto p-5 [scrollbar-width:thin] [scrollbar-color:rgba(139,92,246,0.55)_rgba(30,41,59,0.45)] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-slate-800/60 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-violet-500/60 [&::-webkit-scrollbar-thumb:hover]:bg-violet-400/80"
+          >
             <section className="mb-5 rounded-2xl border border-slate-400/20 bg-slate-800/70 p-4">
               <p className="mb-2 text-xs font-bold uppercase tracking-wide text-zinc-500">What to do</p>
               <p className="leading-relaxed text-zinc-100">{current.tute}</p>
@@ -1467,7 +1470,7 @@ export default function SpecFictionBuilderApp() {
             <div className={`h-2 ${overLimit ? "bg-red-500" : "bg-violet-500"}`} style={{ width: `${progress}%` }} />
           </div>
 
-          <div className="min-h-0 flex-1 overflow-y-auto bg-slate-900 p-5">
+          <div className="min-h-0 flex-1 overflow-y-auto bg-slate-900 p-5 [scrollbar-width:thin] [scrollbar-color:rgba(139,92,246,0.55)_rgba(30,41,59,0.45)] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-slate-800/60 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-violet-500/60 [&::-webkit-scrollbar-thumb:hover]:bg-violet-400/80">
             <div className="space-y-4">
               {STORY_SECTIONS.map((section) => {
                 const sectionWords = countWords(sectionDrafts[section.id] || "");
