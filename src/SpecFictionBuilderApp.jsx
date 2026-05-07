@@ -1397,7 +1397,7 @@ export default function SpecFictionBuilderApp() {
 
           <div
             ref={tuteScrollRef}
-            className="custom-scrollbar min-h-0 flex-1 overflow-y-auto p-5"
+            className="custom-scrollbar custom-scrollbar-left min-h-0 flex-1 overflow-y-auto p-5"
           >
             <section className="mb-5 rounded-2xl border border-slate-400/20 bg-slate-800/70 p-4">
               <p className="mb-2 text-xs font-bold uppercase tracking-wide text-zinc-500">What to do</p>
@@ -1470,7 +1470,7 @@ export default function SpecFictionBuilderApp() {
             <div className={`h-2 ${overLimit ? "bg-red-500" : "bg-violet-500"}`} style={{ width: `${progress}%` }} />
           </div>
 
-          <div className="custom-scrollbar min-h-0 flex-1 overflow-y-auto bg-slate-900 p-5">
+          <div className="custom-scrollbar custom-scrollbar-right min-h-0 flex-1 overflow-y-auto bg-slate-900 p-5">
             <div className="space-y-4">
               {STORY_SECTIONS.map((section) => {
                 const sectionWords = countWords(sectionDrafts[section.id] || "");
