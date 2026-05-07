@@ -6,6 +6,10 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   base: '/specfic/',
   plugins: [react(), tailwindcss()],
+  build: {
+    outDir: 'docs',
+    emptyOutDir: true,
+  },
   server: {
     port: 5174,
     strictPort: false,
